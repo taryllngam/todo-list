@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(#35357700, #547c54), url("../images/img.jpg");
+  height: 100vh;
+}
+
+.container1 {
+  width: 50%;
+  height: fit-content;
+  background: white;
+  border-radius: 10px;
+  margin: 15% auto auto;
+  opacity: 0.8;
+}
+
+.container1 h1 {
+  padding: 60px 20px;
+  color: #0d75ec;
+}
+
+.newtask {
+  position: relative;
+  padding: 60px 20px;
+}
+
+#task {
+  width: 75%;
+  height: 45px;
+  padding: 12px;
+  color: #111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 2px solid #0d75ec;
+}
+
+#push {
+  position: relative;
+  float: right;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #0d75ec;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+}
+
+#tasks {
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  padding: 30px 20px;
+  margin-top: 10px;
+  border: #0d75ec;
+}
+
+.task {
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #939697;
+  cursor: pointer;
+  background-color: #c5e1e6;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+  outline: none;
+  border-color: #0d75ec;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+
+.task span {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.task button {
+  background-color: #6583e5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 20px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: black;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 20%;
+  background-image: url("../images/box.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  color: blue;
+}
+
+ul li.checked::before {
+  background-image: url("../images/checked.jpg");
+}
+
+ul li span:hover {
+  background: #edeef0;
+}
