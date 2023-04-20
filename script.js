@@ -40,4 +40,4 @@ function showTask () {
 }
 showTask()
 
-push.addEventListener("click", addTask)
+push.addEventListener('click', addTask)
