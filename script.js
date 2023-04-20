@@ -1,5 +1,6 @@
 const task = document.getElementById('task')
 const list = document.getElementById('list')
+const push = document.getElementById('push')
 
 function addTask () {
   if (task.value.length <= 0) {
@@ -38,3 +39,5 @@ function showTask () {
   list.innerHTML = localStorage.getItem('data')
 }
 showTask()
+
+push.addEventListener("click", addTask)
